@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="723.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.binarytodecimalanddecimaltobinary.ConverterController">
+   <center>
+      <AnchorPane prefHeight="678.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="120.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Decimal to Binary" textAlignment="CENTER">
+               <font>
+                  <Font name="Monospaced Regular" size="30.0" />
+               </font></Text>
+            <Text layoutX="124.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Binary to Decimal" textAlignment="CENTER">
+               <font>
+                  <Font name="Monospaced Regular" size="30.0" />
+               </font></Text>
+            <TextField fx:id="decToBiTextField" alignment="CENTER" layoutX="105.0" layoutY="224.0" prefHeight="49.0" prefWidth="342.0" promptText="Enter Decimal Number">
+               <font>
+                  <Font name="Monospaced Regular" size="25.0" />
+               </font></TextField>
+            <TextField fx:id="biToDecTextField" alignment="CENTER" layoutX="105.0" layoutY="559.0" prefHeight="49.0" prefWidth="344.0" promptText="Enter Binary Number">
+               <font>
+                  <Font name="Monospaced Regular" size="25.0" />
+               </font></TextField>
+            <Label fx:id="decToBiLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="123.0" layoutY="108.0" prefHeight="70.0" prefWidth="300.0" textAlignment="CENTER">
+               <font>
+                  <Font name="Modern No. 20" size="70.0" />
+               </font></Label>
+            <Label fx:id="biToDecLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="127.0" layoutY="453.0" prefHeight="70.0" prefWidth="300.0" textAlignment="CENTER">
+               <font>
+                  <Font name="Modern No. 20" size="70.0" />
+               </font></Label>
+            <Line endX="100.0" layoutX="248.0" layoutY="350.0" startX="-100.0" />
+            <Line endX="100.0" layoutX="47.0" layoutY="350.0" startX="-100.0" />
+            <Line endX="100.0" layoutX="449.0" layoutY="350.0" startX="-100.0" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="198.0" layoutY="694.0" text="Created by Jon Arbell De Ocampo" textAlignment="CENTER">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

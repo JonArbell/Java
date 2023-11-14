@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.binarytodecimalanddecimaltobinary.CalculatorController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="textField" alignment="TOP_LEFT" layoutX="5.0" layoutY="127.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="86.0" prefWidth="490.0" text="0">
+               <font>
+                  <Font name="Monospaced Bold" size="27.0" />
+               </font>
+            </TextField>
+            <Label fx:id="resultLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="332.0" layoutY="170.0" prefHeight="40.0" prefWidth="158.0" textAlignment="CENTER">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font></Label>
+            <Button fx:id="plusButton" layoutX="344.0" layoutY="480.0" mnemonicParsing="false" onAction="#plusButtonOnAction" prefHeight="71.0" prefWidth="78.0" text="+">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font></Button>
+            <Button fx:id="minusButton" layoutX="344.0" layoutY="400.0" mnemonicParsing="false" onAction="#minusButtonOnAction" prefHeight="71.0" prefWidth="78.0" text="-">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font></Button>
+            <Button fx:id="multiButton" layoutX="344.0" layoutY="319.0" mnemonicParsing="false" onAction="#multiButtonOnAction" prefHeight="71.0" prefWidth="78.0" text="*">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font></Button>
+            <Button fx:id="divideButton" layoutX="344.0" layoutY="239.0" mnemonicParsing="false" onAction="#divideButtonOnAction" prefHeight="71.0" prefWidth="78.0" text="/">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font></Button>
+            <Button fx:id="clearButton" layoutX="79.0" layoutY="239.0" mnemonicParsing="false" onAction="#clearButtonOnAction" prefHeight="71.0" prefWidth="78.0" text="C">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font></Button>
+            <Button fx:id="equalButton" layoutX="344.0" layoutY="559.0" mnemonicParsing="false" onAction="#equalButtonOnAction" prefHeight="71.0" prefWidth="78.0" text="=">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font></Button>
+            <Button fx:id="percentageButton" layoutX="168.0" layoutY="239.0" mnemonicParsing="false" onAction="#percentageButtonOnAction" prefHeight="71.0" prefWidth="78.0" text="\%">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font></Button>
+            <Button fx:id="deleteButton" layoutX="256.0" layoutY="239.0" mnemonicParsing="false" onAction="#deleteButtonOnAction" prefHeight="71.0" prefWidth="78.0" text="del">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font></Button>
+            <Button fx:id="sevenButton" layoutX="79.0" layoutY="319.0" mnemonicParsing="false" onAction="#sevenButtonOnAction" prefHeight="71.0" prefWidth="78.0" text="7">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font></Button>
+            <Button fx:id="eightButton" layoutX="168.0" layoutY="319.0" mnemonicParsing="false" onAction="#eightButtonOnAction" prefHeight="71.0" prefWidth="78.0" text="8">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font></Button>
+            <Button fx:id="nineButton" layoutX="256.0" layoutY="319.0" mnemonicParsing="false" onAction="#nineButtonOnAction" prefHeight="71.0" prefWidth="78.0" text="9">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font></Button>
+            <Button fx:id="fourButton" layoutX="79.0" layoutY="400.0" mnemonicParsing="false" onAction="#fourButtonOnAction" prefHeight="71.0" prefWidth="78.0" text="4">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font></Button>
+            <Button fx:id="fiveButton" layoutX="168.0" layoutY="400.0" mnemonicParsing="false" onAction="#fiveButtonOnAction" prefHeight="71.0" prefWidth="78.0" text="5">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font></Button>
+            <Button fx:id="sixButton" layoutX="256.0" layoutY="400.0" mnemonicParsing="false" onAction="#sixButtonOnAction" prefHeight="71.0" prefWidth="78.0" text="6">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font></Button>
+            <Button fx:id="oneButton" layoutX="79.0" layoutY="480.0" mnemonicParsing="false" onAction="#oneButtonOnAction" prefHeight="71.0" prefWidth="78.0" text="1">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font></Button>
+            <Button fx:id="twoButton" layoutX="168.0" layoutY="480.0" mnemonicParsing="false" onAction="#twoButtonOnAction" prefHeight="71.0" prefWidth="78.0" text="2">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font></Button>
+            <Button fx:id="threeButton" layoutX="256.0" layoutY="480.0" mnemonicParsing="false" onAction="#threeButtonOnAction" prefHeight="71.0" prefWidth="78.0" text="3">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font></Button>
+            <Button fx:id="doubleZeroButton" layoutX="79.0" layoutY="559.0" mnemonicParsing="false" onAction="#doubleZeroButtonOnAction" prefHeight="71.0" prefWidth="78.0" text="00">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font></Button>
+            <Button fx:id="singleZeroButton" layoutX="168.0" layoutY="559.0" mnemonicParsing="false" onAction="#singleZeroButtonOnAction" prefHeight="71.0" prefWidth="78.0" text="0">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font></Button>
+            <Button fx:id="pointButton" layoutX="256.0" layoutY="559.0" mnemonicParsing="false" onAction="#pointButtonOnAction" prefHeight="71.0" prefWidth="78.0" text=".">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font></Button>
+            <Label layoutX="171.0" layoutY="671.0" text="Created by Jon Arbell De Ocampo">
+               <font>
+                  <Font size="10.0" />
+               </font></Label>
+            <Button fx:id="historyButton" layoutX="396.0" layoutY="43.0" mnemonicParsing="false" onAction="#historyButtonOnAction" text="History">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
