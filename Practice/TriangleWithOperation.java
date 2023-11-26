@@ -1,6 +1,6 @@
 package practice;
 
-public class TriangleWithOperator {
+public class TriangleWithOperation {
 
     public static void main(String[] args) {
         String one = "1";
