@@ -16,7 +16,7 @@ public class InvertedAndRotatedHalfTrianglePattern {
         int sizeStar = 1;
         for(int i = 0; i < row; i++){
 
-            for(int k = row; k-i > 0; k--){
+            for(int k = row; k-i-1 > 0; k--){
                 System.out.print("  ");
             }
             for(int j =0;j<sizeStar;j++){
